@@ -1,10 +1,18 @@
-import { Button } from '@/shared/components/ui/button';
+import { Routes, Route } from "react-router-dom";
+import Details from "./pages/detailsproject";
+import HomePage from "./routes/homepage";
+import Scroll from "./layouts/scrolltoup";
 
 export default function App() {
-   return (
-      <div className='flex h-screen flex-col items-center justify-center gap-4'>
-         <h1 className='text-3xl font-bold underline'>Hello world!</h1>
-         <Button>Click me</Button>
-      </div>
-   );
+  return (
+    <div className="relative">
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/details/:projectId" element={<Details />} />
+      </Routes>
+
+      {/* زر الرجوع للأعلى */}
+      <Scroll />
+    </div>
+  );
 }

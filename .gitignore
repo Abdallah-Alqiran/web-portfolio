@@ -9,6 +9,9 @@ lerna-debug.log*
 
 node_modules
 dist
+src/shared/components/firebase.tsx
+src/shared/components/firestore.tsx
+src/shared/components/types.tsx
 dist-ssr
 *.local
 
