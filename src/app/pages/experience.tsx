@@ -18,7 +18,7 @@ const Experience = () => {
        <motion.div
   initial={{ opacity: 0, x: -50 }}
   whileInView={{ opacity: 1, x: 0 }}
-  transition={{ delay: 0.1, duration: 0.9, ease: "easeOut" }} className="max-w-6xl mx-auto mt-12 space-y-10">
+  transition={{ delay: 0.1, duration: 0.9, ease: "easeOut" }} className="w-6xl mx-auto mt-12 space-y-10">
         {data?.experiences?.map((ex,index) => (
           <div
             key={ex.id||index}
