@@ -70,7 +70,7 @@ const handleSubmit = async () => {
               duration: 0.9,
               ease: "easeOut",
             }}
-            className="w-full  mx-auto p-16 border-2 border-[#006a6a] 
+            className="w-full  mx-auto p-20 border-2 border-[#006a6a] 
             rounded-xl shadow-md space-y-6"
           >
             <h2 className="text-xl font-semibold text-[#25c1dd] text-center">
@@ -80,14 +80,15 @@ const handleSubmit = async () => {
             <Input
               type="email"
               placeholder="Your Email"
-              className="w-full border-2 border-[#006a6a] focus:outline-none"
+              className="w-full border-2 font-semibold border-[#006a6a] focus:outline-none p-7"
               onChange={(e) => setEmail(e.target.value)}
               value={email}
             />
 
             <Textarea
-              placeholder="Type your message here."
-              className="w-full border-2 border-[#006a6a] h-40 resize-none focus:outline-none"
+              placeholder="Type your message here."  
+              className="w-full border-2 border-[#006a6a] font-semibold
+               h-40 resize-none focus:outline-none p-6"
               onChange={(e) => setMessage(e.target.value)}
               value={message}
             />

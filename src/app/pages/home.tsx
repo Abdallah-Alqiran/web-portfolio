@@ -27,22 +27,18 @@ const Home = () => {
         <motion.img
           src={data?.userImage} loading="lazy"
           alt="Profile"
-          className="w-60 h-60 rounded-full object-cover "
+          className="w-72 h-72 rounded-full object-cover "
           initial={{ opacity: 0, rotateY: 90 }}
           whileInView={{ opacity: 1, rotateY: 0 }}
           transition={{ delay: 0.1, duration: 0.6, ease: "easeOut" }}
         />
+<h1 className="text-3xl font-bold text-[#25c1dd] w-fit mx-auto tracking-wide drop-shadow-md mt-4">
+  {data?.userName}
+</h1>
 
-        <h1
-          className="text-2xl font-bold text-[#25c1dd]
-         w-fit mx-auto tracking-wide drop-shadow-md mt-3"
-        >
-          {data?.userName}
-        </h1>
-
-        <h3 className="text-xl text-[#25a9a9]  mt-1 font-medium">
-          {data?.jobTitle}
-        </h3>
+<h3 className="text-2xl text-[#25a9a9] mt-2 font-medium">
+  {data?.jobTitle}
+</h3>
 
         <div className="flex space-x-4 mt-4">
           {data?.contactAndAccounts.map((user) => (
@@ -70,13 +66,14 @@ const Home = () => {
             className="mt-6"
           >
  <Button
-  className="group bg-[#25c1dd] text-gray-300 px-6 py-2 rounded-2xl shadow-lg 
-  transition duration-300 flex items-center gap-2 border w-fit 
-  border-transparent hover:border-[#006a6a] hover:bg-gray-300 font-semibold hover:text-[#006a6a]"
+   className="group bg-[#25c1dd] text-gray-300 px-8 py-3 text-lg 
+  rounded-2xl shadow-lg transition duration-300 flex items-center gap-2 
+  border w-fit border-transparent hover:border-[#006a6a] 
+  hover:bg-gray-300 font-semibold hover:text-[#006a6a]"
 >
   Download CV
   <Download
-    size={20}
+    size={28}
     className="transition-transform duration-300 group-hover:animate-jump"
   />
 </Button>

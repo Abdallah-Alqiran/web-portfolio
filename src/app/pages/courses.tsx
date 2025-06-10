@@ -27,7 +27,7 @@ const Courses = () => {
           {data?.courses.map((course,index) => (
             <CarouselItem
               key={course.id || index}
-              className="pl-4 md:basis-1/2 lg:basis-1/3 xl:basic-1/4"
+              className="pl-4 md:basis-1/2 lg:basis-1/4"
             >
               <motion.div
                 className="h-full rounded-2xl 

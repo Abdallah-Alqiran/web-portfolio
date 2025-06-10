@@ -17,14 +17,14 @@ const Skills = () => {
         Skills
       </h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 pb-20 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 pb-20 ">
         {data?.skills?.map((skill, index) => (
           <motion.div
             key={skill.id || index}
             className="relative group 
     rounded-2xl p-5 shadow-lg cursor-pointer
     transition-transform duration-300
-    border-2 border-[#006a6a] w-85"
+    border-2 border-[#006a6a]"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: index * 0.1, duration: 0.6, ease: "easeOut" }}
