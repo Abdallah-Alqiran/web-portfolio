@@ -43,7 +43,7 @@ const handleSubmit = async () => {
 
 
   return (
-    <div id="projects" className="pt-22 bg-secondary">
+    <section id="contact" className="pt-22 bg-secondary">
       <h1 className="text-3xl font-semibold text-[#25c1dd] w-fit mx-auto pt-20 pb-1 tracking-wide drop-shadow-md">
         Contact Me
       </h1>
@@ -101,7 +101,7 @@ const handleSubmit = async () => {
           </motion.div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

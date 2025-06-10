@@ -3,11 +3,11 @@ import { useState } from "react";
 
 const Nav = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("home"); // لتحديد العنصر النشط
+  const [activeSection, setActiveSection] = useState("home"); 
 
   const handleSmoothScroll = (e, section) => {
     e.preventDefault();
-    setActiveSection(section); // تحديث العنصر النشط عند الضغط
+    setActiveSection(section); 
     const targetElement = document.getElementById(section);
     if (targetElement) {
       targetElement.scrollIntoView({ behavior: "smooth" });
@@ -40,14 +40,12 @@ const Nav = () => {
             </button>
           </div>
 
-          {/* اسم البراند */}
           <div className="flex flex-1 items-center justify-center sm:justify-start">
             <div className="text-[#25c1dd] text-lg font-medium whitespace-nowrap">
   Abdalla Alqiran
 </div>
           </div>
 
-          {/* روابط القائمة في الديسكتوب */}
         <div className="hidden sm:block w-full">
   <div className="flex justify-center space-x-6">
     {sections.map((section) => (

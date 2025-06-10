@@ -15,7 +15,7 @@ createRoot(document.getElementById("root")!).render(
     <Providers>
       <ThemeProvider>
         <QueryClientProvider client={queryClient}>
-          <BrowserRouter>
+          <BrowserRouter  basename="/web-portfolio">
             <App />
           </BrowserRouter>
         </QueryClientProvider>

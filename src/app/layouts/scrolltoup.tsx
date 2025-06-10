@@ -10,7 +10,7 @@ export default function Scroll() {
        z-50 bg-[#25c1dd] hover:bg-white text-white
         hover:text-[#006a6a] border hover:border-[#006a6a] shadow-lg p-2 rounded-full"
     >
-      <ArrowUpToLine className="w-6 h-6" />
+      <ArrowUpToLine className="w-10 h-10" />
     </ScrollToTop>
   );
 }
