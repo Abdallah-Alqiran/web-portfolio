@@ -16,7 +16,7 @@ const Technology = () => {
         Technologies & Tools
       </h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 max-w-5xl mx-auto pb-20">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 max-w-6xl mx-auto pb-20">
         {data?.technologiesAndTools?.map((techs, index) => (
           <motion.div
             key={techs.id || index}

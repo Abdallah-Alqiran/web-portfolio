@@ -56,9 +56,9 @@ const handleSubmit = async () => {
             className="flex justify-center"
           >
             <img
-              src={contactimg}
+              src={contactimg} loading="lazy"
               alt="Contact Illustration"
-              className="w-screen md:block hidden object-cover"
+              className="w-150 md:block hidden object-cover p-0 "
             />
           </motion.div>
 
@@ -70,7 +70,8 @@ const handleSubmit = async () => {
               duration: 0.9,
               ease: "easeOut",
             }}
-            className="w-full max-w-lg mx-auto p-8 border-2 border-[#006a6a] rounded-xl shadow-md space-y-6"
+            className="w-full  mx-auto p-16 border-2 border-[#006a6a] 
+            rounded-xl shadow-md space-y-6"
           >
             <h2 className="text-xl font-semibold text-[#25c1dd] text-center">
               Get in Touch

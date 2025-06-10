@@ -24,7 +24,7 @@ const Projects = () => {
             {data?.projects.map((project) => (
               <CarouselItem
                 key={project.id}
-                  className="pl-4 md:basis-1/2 lg:basis-1/4"
+                  className="pl-4 md:basis-1/2 lg:basis-1/3 xl:basic-1/4"
               >
                 <motion.div
                   className=" rounded-2xl shadow-md overflow-hidden flex flex-col mb-20  "
@@ -37,7 +37,7 @@ const Projects = () => {
                   }}
                 >
                   <img
-                    src={project.image}
+                    src={project.image} loading="lazy"
                     alt={`Project ${project.id}`}
                     className="w-full h-48 object-fit"
                   />

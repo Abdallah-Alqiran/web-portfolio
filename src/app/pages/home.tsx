@@ -1,4 +1,4 @@
-import img2 from "../images/download (2).png";
+import img2 from "../images/download (2).jpeg";
 import img3 from "../images/download (1).png";
 import img4 from "../images/download.png";
 import { Button } from "@/shared/components/ui/button";
@@ -25,7 +25,7 @@ const Home = () => {
      max-w-md p-6  transition-all  "
       >
         <motion.img
-          src={data?.userImage}
+          src={data?.userImage} loading="lazy"
           alt="Profile"
           className="w-60 h-60 rounded-full object-cover "
           initial={{ opacity: 0, rotateY: 90 }}
@@ -35,7 +35,7 @@ const Home = () => {
 
         <h1
           className="text-2xl font-bold text-[#25c1dd]
-         w-fit mx-auto tracking-wide drop-shadow-md"
+         w-fit mx-auto tracking-wide drop-shadow-md mt-3"
         >
           {data?.userName}
         </h1>
@@ -54,7 +54,7 @@ const Home = () => {
               className="hover:scale-110 transition-transform duration-300"
             >
               <img
-                src={image[user.webName] ?? img4}
+                src={image[user.webName] ?? img4} loading="lazy"
                 className="w-10 h-10 rounded-full shadow-md hover:shadow-lg"
                 alt={user.webName}
               />

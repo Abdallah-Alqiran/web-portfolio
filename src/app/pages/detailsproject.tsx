@@ -18,7 +18,7 @@ const Details = () => {
   {/* الصورة */}
   <div className="w-full">
     <img
-      src={project.image}
+      src={project.image} loading="lazy"
       alt={project.projectName}
       className="w-full h-auto max-h-[600px] aspect-video object-cover rounded-xl shadow-lg"
     />

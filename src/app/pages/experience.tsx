@@ -22,7 +22,7 @@ const Experience = () => {
         {data?.experiences?.map((ex,index) => (
           <div
             key={ex.id||index}
-            className="bg-white dark:bg-[#1e1e1e] shadow-md rounded-xl p-6 space-y-4 border-l-4
+            className="bg-white dark:bg-[#1e1e1e] shadow-md rounded-xl p-4 space-y-4 border-l-4
              border-[#209191] text-left"
           >
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-2">
