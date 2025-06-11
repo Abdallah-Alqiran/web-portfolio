@@ -59,8 +59,8 @@ const handleSubmit = async () => {
               src={contactimg}
                loading="lazy"
               alt="Contact Illustration"
-              width={800}
-              height={900}
+              width={500}
+              height={500}
               className="w-150 md:block hidden object-cover p-0 "
             />
           </motion.div>
