@@ -10,7 +10,7 @@ const Education = () => {
   return (
     <section className="pt-20  px-6 bg-secondary pb-20 ">
       <div className="flex items-center justify-center mb-10">
-        <h1 className="text-4xl font-bold text-[#25c1dd] tracking-wide drop-shadow-sm">
+        <h1 className="text-4xl font-semibold text-[#25c1dd] tracking-wide drop-shadow-sm">
           Education
         </h1>
       </div>
