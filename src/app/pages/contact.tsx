@@ -56,8 +56,11 @@ const handleSubmit = async () => {
             className="flex justify-center"
           >
             <img
-              src={contactimg} loading="lazy"
+              src={contactimg}
+               loading="lazy"
               alt="Contact Illustration"
+              width={800}
+              height={900}
               className="w-150 md:block hidden object-cover p-0 "
             />
           </motion.div>

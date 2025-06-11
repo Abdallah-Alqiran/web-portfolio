@@ -15,16 +15,15 @@ const Details = () => {
 
   return (
 <div className="p-6 max-w-2xl mx-auto mt-[8%] space-y-7">
-  {/* الصورة */}
   <div className="w-full">
     <img
       src={project.image} loading="lazy"
+      width={200} height={200}
       alt={project.projectName}
       className="w-full h-auto max-h-[600px] aspect-video object-cover rounded-xl shadow-lg"
     />
   </div>
 
-  {/* المحتوى */}
   <div className="space-y-6">
     <h2 className="text-xl md:text-3xl font-bold text-[#25c1dd] text-center">
       {project.projectName}
