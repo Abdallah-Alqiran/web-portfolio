@@ -1,6 +1,5 @@
 import { ThemeToggler } from "@/shared/components/theme-toggler";
 import { useState } from "react";
-
 const Nav = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home"); 
@@ -44,6 +43,7 @@ const Nav = () => {
             <div className="text-[#25c1dd] text-lg font-medium whitespace-nowrap">
   Abdalla Alqiran
 </div>
+{/* <img src={logo}alt="Abdalla Alqiran" loading="lazy" width={20} height={20}/> */}
           </div>
 
         <div className="hidden sm:block w-full">
