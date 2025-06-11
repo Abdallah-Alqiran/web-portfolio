@@ -11,9 +11,9 @@ const Skills = () => {
     return <p className="text-center text-red-500 mt-20">Error happened!</p>;
 
   return (
-    <section id="skills" className="pt-33 px-6   bg-secondary  ">
+    <section id="skills" className="pt-20 px-6   bg-secondary pb-10  ">
       <h1 className="text-3xl font-semibold text-[#25c1dd]
-       w-fit mx-auto mb-7 pb-1 tracking-wide drop-shadow-md ">
+       w-fit mx-auto mb-7 pb-10 tracking-wide drop-shadow-md ">
         Skills
       </h1>
 

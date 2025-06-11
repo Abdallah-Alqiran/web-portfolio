@@ -27,7 +27,7 @@ const Courses = () => {
           {data?.courses.map((course,index) => (
             <CarouselItem
               key={course.id || index}
-              className="pl-4 md:basis-1/2 lg:basis-1/4"
+              className="pl-4 sm:basis-1/2 md:basis-1/3 lg:basis-1/4"
             >
               <motion.div
                 className="h-full rounded-2xl 
@@ -35,7 +35,7 @@ const Courses = () => {
                  border-2 border-[#209191] "
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ delay: index * 0.1, duration: 0.8 }}
+                transition={{ delay: index * 0.1, duration: 0.93 }}
                 viewport={{ once: true }}
               >
                 <div className="flex items-center gap-2 mb-3 text-[#209191]  ">

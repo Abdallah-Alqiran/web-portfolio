@@ -61,46 +61,46 @@ const handleSubmit = async () => {
               className="w-150 md:block hidden object-cover p-0 "
             />
           </motion.div>
+<motion.div
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{
+    delay: 0.3,
+    duration: 0.99,
+    ease: "easeOut",
+  }}
+  className="w-full h-full max-w-xl mx-auto px-8 py-10 border border-[#006a6a] 
+  rounded-2xl shadow-lg bg-white dark:bg-[#1e1e1e] space-y-8 flex flex-col justify-center"
+>
+  <h2 className="text-3xl font-bold text-[#25c1dd] text-center">
+    Get in Touch
+  </h2>
 
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{
-              delay: 0.2,
-              duration: 0.9,
-              ease: "easeOut",
-            }}
-            className="w-full  mx-auto p-20 border-2 border-[#006a6a] 
-            rounded-xl shadow-md space-y-6"
-          >
-            <h2 className="text-xl font-semibold text-[#25c1dd] text-center">
-              Get in Touch
-            </h2>
+  <Input
+    type="email"
+    placeholder="Your Email"
+    className="w-full text-xl border border-[#006a6a] focus:outline-none focus:ring-2 focus:ring-[#25c1dd] rounded-lg px-6 py-5 font-semibold"
+    onChange={(e) => setEmail(e.target.value)}
+    value={email}
+  />
 
-            <Input
-              type="email"
-              placeholder="Your Email"
-              className="w-full border-2 font-semibold border-[#006a6a] focus:outline-none p-7"
-              onChange={(e) => setEmail(e.target.value)}
-              value={email}
-            />
+  <Textarea
+    placeholder="Type your message here."  
+    className="w-full text-xl border border-[#006a6a] focus:outline-none focus:ring-2 focus:ring-[#25c1dd] rounded-lg px-6 py-5 h-48 resize-none font-semibold"
+    onChange={(e) => setMessage(e.target.value)}
+    value={message}
+  />
 
-            <Textarea
-              placeholder="Type your message here."  
-              className="w-full border-2 border-[#006a6a] font-semibold
-               h-40 resize-none focus:outline-none p-6"
-              onChange={(e) => setMessage(e.target.value)}
-              value={message}
-            />
+  <Button
+    className="w-full py-4 text-lg bg-[#25c1dd] text-white font-semibold rounded-full hover:bg-white hover:text-[#006a6a] border-2 border-transparent hover:border-[#006a6a] transition-all duration-300"
+    onClick={handleSubmit}
+    disabled={sending}
+  >
+    {sending ? "Sending..." : "Send Message"}
+  </Button>
+</motion.div>
 
-            <Button
-              className="w-full py-3 bg-[#25c1dd] text-white rounded-full hover:bg-white hover:text-[#006a6a] border-2 border-transparent hover:border-[#006a6a] transition duration-300"
-              onClick={handleSubmit}
-              disabled={sending}
-            >
-              {sending ? "Sending..." : "Send Message"}
-            </Button>
-          </motion.div>
+
         </div>
       </div>
     </section>

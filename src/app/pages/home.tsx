@@ -18,7 +18,7 @@ const Home = () => {
   if (error) return <p className="text-center text-red-500">Error happened!</p>;
 
   return (
-    <div className="  bg-secondary w-full pt-20">
+    <div className="  bg-secondary w-full pt-[100px]">
       <div
         id="home"
         className="flex flex-col items-center justify-center mx-auto 
@@ -40,7 +40,7 @@ const Home = () => {
   {data?.jobTitle}
 </h3>
 
-        <div className="flex space-x-4 mt-4">
+        <div className="flex space-x-4 mt-6">
           {data?.contactAndAccounts.map((user) => (
             <a
               href={user.url}
@@ -66,7 +66,7 @@ const Home = () => {
             className="mt-6"
           >
  <Button
-   className="group bg-[#25c1dd] text-gray-300 px-8 py-3 text-lg 
+   className="group bg-[#25c1dd] text-gray-300 mt-3 px-8 py-3 text-lg 
   rounded-2xl shadow-lg transition duration-300 flex items-center gap-2 
   border w-fit border-transparent hover:border-[#006a6a] 
   hover:bg-gray-300 font-semibold hover:text-[#006a6a]"

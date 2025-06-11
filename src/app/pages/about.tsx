@@ -11,7 +11,7 @@ const About = () => {
       <div className="flex items-center justify-center gap-2 mb-4">
         <h1
           className="text-3xl text-[#25c1dd] font-semibold 
-        w-fit mx-auto   pb-1 tracking-wide drop-shadow-md mt-10"
+        w-fit mx-auto    pb-1 tracking-wide drop-shadow-md mt-16"
         >
           About Me
         </h1>
@@ -21,15 +21,13 @@ const About = () => {
   whileInView={{ opacity: 1, x: 0 }}
   transition={{ delay: 0.1, duration: 0.8, ease: "easeOut" }}
   className="
-    mt-10 p-4 sm:p-6 rounded-lg border 
-    bg-[#006a6a]
-    shadow-md
+      sm:p-6   
     transition-colors duration-500
-    w-full max-w-3xl mx-auto
+    w-full max-w-7xl mx-auto 
   "
 >
-  <p className="text-sm sm:text-base md:text-lg font-semibold leading-relaxed text-gray-300 
-     before:content-['“'] after:content-['”'] before:text-xl after:text-xl before:align-top after:align-bottom">
+  <p  className="bg-white dark:bg-[#1e1e1e] shadow-md rounded-xl p-8 space-y-4 border-l-4
+             border-[#209191] text-left text-lg font-semibold">
     {data?.about}
   </p>
 </motion.div>
