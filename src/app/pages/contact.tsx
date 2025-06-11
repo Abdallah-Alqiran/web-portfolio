@@ -72,21 +72,22 @@ const handleSubmit = async () => {
   className="w-full h-full max-w-xl mx-auto px-8 py-10 border border-[#006a6a] 
   rounded-2xl shadow-lg bg-white dark:bg-[#1e1e1e] space-y-8 flex flex-col justify-center"
 >
-  <h2 className="text-3xl font-bold text-[#25c1dd] text-center">
+  <h2 className="text-3xl font-semibold text-[#25c1dd] text-center">
     Get in Touch
   </h2>
 
   <Input
     type="email"
     placeholder="Your Email"
-    className="w-full text-xl border border-[#006a6a] focus:outline-none focus:ring-2 focus:ring-[#25c1dd] rounded-lg px-6 py-5 font-semibold"
+    className="w-full text-lg border border-[#006a6a]
+     focus:outline-none focus:ring-2 focus:ring-[#25c1dd] rounded-lg px-6 py-5 font-semibold"
     onChange={(e) => setEmail(e.target.value)}
     value={email}
   />
 
   <Textarea
     placeholder="Type your message here."  
-    className="w-full text-xl border border-[#006a6a] focus:outline-none focus:ring-2 focus:ring-[#25c1dd] rounded-lg px-6 py-5 h-48 resize-none font-semibold"
+    className="w-full text-lg  border border-[#006a6a] focus:outline-none focus:ring-2 focus:ring-[#25c1dd] rounded-lg px-6 py-5 h-48 resize-none font-semibold"
     onChange={(e) => setMessage(e.target.value)}
     value={message}
   />
