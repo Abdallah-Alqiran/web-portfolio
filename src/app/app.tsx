@@ -11,7 +11,6 @@ export default function App() {
         <Route path="/details/:projectId" element={<Details />} />
       </Routes>
 
-      {/* زر الرجوع للأعلى */}
       <Scroll />
     </div>
   );
