@@ -42,7 +42,7 @@ const Courses = () => {
                   <GraduationCap className="w-8 h-8 dark:text-white drop-shadow-md" />
                   <h2 className="text-xl font-bold">{course.courseName}</h2>
                 </div>
-                <p className="text-lg font-semibold leading-relaxed">
+                <p className="text-lg font-semibold leading-relaxed text-gray-600 dark:text-gray-300 ">
                   {course.courseDescription}
                 </p>
               </motion.div>

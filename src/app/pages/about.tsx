@@ -27,7 +27,7 @@ const About = () => {
   "
 >
   <p  className="bg-white dark:bg-[#1e1e1e] shadow-md rounded-xl p-8 space-y-4 border-l-4
-             border-[#209191] text-left text-lg font-semibold">
+             border-[#209191] text-left  text-gray-600 dark:text-gray-300 text-lg font-semibold">
     {data?.about}
   </p>
 </motion.div>

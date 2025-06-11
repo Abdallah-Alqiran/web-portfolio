@@ -66,7 +66,7 @@ const Home = () => {
             className="mt-6"
           >
  <Button
-   className="group bg-[#25c1dd] text-gray-300 mt-3 px-8 py-3 text-lg 
+   className="group bg-[#166c7b] text-gray-300 mt-3 px-8 py-3 text-lg 
   rounded-2xl shadow-lg transition duration-300 flex items-center gap-2 
   border w-fit border-transparent hover:border-[#006a6a] 
   hover:bg-gray-300 font-semibold hover:text-[#006a6a]"

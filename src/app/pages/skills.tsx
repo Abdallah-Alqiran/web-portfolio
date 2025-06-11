@@ -34,7 +34,8 @@ const Skills = () => {
 
             <div className="relative z-10 flex flex-col items-center justify-center">
               <Star size={36} className="mb-3 text-yellow-300" />
-              <h3 className="text-xl font-semibold tracking-wide text-gray-600 dark:text-gray-300">
+              <h3 className="text-xl font-semibold tracking-wide
+               text-gray-600 dark:text-gray-300">
                 {skill.skillName}
               </h3>
             </div>
