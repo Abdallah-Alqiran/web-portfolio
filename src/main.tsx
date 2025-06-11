@@ -9,7 +9,6 @@ import "./index.css";
 import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "./app/providers/theme-provider";
 const queryClient = new QueryClient();
-
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <Providers>
