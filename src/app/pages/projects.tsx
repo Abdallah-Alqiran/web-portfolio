@@ -10,11 +10,13 @@ import {
 
 const Projects = () => {
   const { isLoading, error, data } = useUserdata();
-  if (isLoading) return <p className="text-center text-gray-400">Loading...</p>;
-  if (error) return <p className="text-center text-red-500">Error happened!</p>;
+  if (isLoading) return <p className=" bg-secondary text-center text-2xl font-semibold
+   text-[#25c1dd] animate-pulse">Loading...</p>;
+  if (error) return <p className="text-center text-2xl font-semibold  animate-pulse
+   text-red-500 bg-secondary">Error happened!</p>;
 
   return (
-    <div id="projects" className="pt-[88px] bg-secondary">
+    <div id="projects" className=" bg-secondary">
       <h1 className="text-3xl font-semibold text-[#25c1dd] w-fit mx-auto pt-20 pb-1 tracking-wide drop-shadow-md">
         Projects
       </h1>
@@ -49,7 +51,7 @@ const Projects = () => {
                   />
 
                   <div className="p-4 mt-auto">
-                    <h3 className="text-[#25c1dd] font-semibold mb-4">
+                    <h3 className="text-[#25c1dd] font-semibold mb-4 text-lg">
                       {project.projectName}
                     </h3>
 
@@ -57,7 +59,8 @@ const Projects = () => {
                       <Button
                         className="bg-[#006a6a] text-gray-300 w-full px-6 py-2 rounded-xl shadow-lg 
                         transition duration-300 flex items-center gap-2 border text-bolder
-                        border-transparent hover:border-[#25c1dd] hover:bg-gray-300 hover:text-[#25c1dd] mb-2"
+                        border-transparent hover:border-[#25c1dd] hover:bg-gray-300
+                         hover:text-[#25c1dd] mb-2"
                       >
                         More Details
                       </Button>

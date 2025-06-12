@@ -10,10 +10,11 @@ import { GraduationCap } from "lucide-react";
 const Courses = () => {
   const { isLoading, error, data } = useUserdata();
 
-  if (isLoading)
-    return <p className="text-center text-gray-400 mt-20">Loading...</p>;
-  if (error)
-    return <p className="text-center text-red-500 mt-20">Error happened!</p>;
+
+   if (isLoading) return <p className=" bg-secondary text-center text-2xl font-semibold
+   text-[#25c1dd] animate-pulse">Loading...</p>;
+  if (error) return <p className="text-center text-2xl font-semibold  animate-pulse
+   text-red-500 bg-secondary">Error happened!</p>;
 
   return (
     <section id="courses" className="pt-20 px-4 pb-20 bg-secondary">
@@ -40,9 +41,10 @@ const Courses = () => {
               >
                 <div className="flex items-center gap-2 mb-3 text-[#209191]  ">
                   <GraduationCap className="w-8 h-8 dark:text-white drop-shadow-md" />
-                  <h2 className="text-xl font-bold">{course.courseName}</h2>
+                  <h2 className=" text-md md:text-xl font-bold">{course.courseName}</h2>
                 </div>
-                <p className="text-lg font-semibold leading-relaxed text-gray-600 dark:text-gray-300 ">
+                <p className="text-md md:text-lg font-semibold
+                 leading-relaxed text-gray-600 dark:text-gray-300 ">
                   {course.courseDescription}
                 </p>
               </motion.div>

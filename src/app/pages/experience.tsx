@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 const Experience = () => {
   const { isLoading, error, data } = useUserdata();
 
-  if (isLoading)
-    return <p className="text-center  text-gray-400 mt-20">Loading...</p>;
-  if (error)
-    return <p className="text-center text-red-500 mt-20">Error happened!</p>;
+    if (isLoading) return <p className=" bg-secondary text-center text-2xl font-semibold
+   text-[#25c1dd] animate-pulse">Loading...</p>;
+  if (error) return <p className="text-center text-2xl font-semibold  animate-pulse
+   text-red-500 bg-secondary">Error happened!</p>;
 
   return (
     <section id="experience" className="text-center px-4 bg-secondary py-20">

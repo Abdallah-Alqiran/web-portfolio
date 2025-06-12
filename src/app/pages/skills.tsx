@@ -5,44 +5,39 @@ import { motion } from "framer-motion";
 const Skills = () => {
   const { isLoading, error, data } = useUserdata();
 
-  if (isLoading)
-    return <p className="text-center text-gray-400 mt-20">Loading...</p>;
-  if (error)
-    return <p className="text-center text-red-500 mt-20">Error happened!</p>;
+    if (isLoading) return <p className=" bg-secondary text-center text-2xl font-semibold
+   text-[#25c1dd] animate-pulse">Loading...</p>;
+  if (error) return <p className="text-center text-2xl font-semibold  animate-pulse
+   text-red-500 bg-secondary">Error happened!</p>;
 
   return (
-    <section id="skills" className="pt-20 px-6   bg-secondary pb-10  ">
-      <h1 className="text-3xl font-semibold text-[#25c1dd]
-       w-fit mx-auto mb-7 pb-10 tracking-wide drop-shadow-md ">
-        Skills
-      </h1>
+  <section id="skills" className="pt-20 px-4 bg-secondary pb-10">
+  <h1 className="text-3xl font-semibold text-[#25c1dd]
+   w-fit mx-auto mb-10 tracking-wide drop-shadow-md">
+    Skills
+  </h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 pb-20 ">
-        {data?.skills?.map((skill, index) => (
-          <motion.div
-            key={skill.id || index}
-            className="relative group 
-    rounded-2xl p-5 shadow-lg cursor-pointer
-    transition-transform duration-300
-    border-2 border-[#006a6a]"
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.1, duration: 0.6, ease: "easeOut" }}
-            viewport={{ once: true }}
-          >
-            <div className="rounded-2xl opacity-30"></div>
+  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 max-w-8xl mx-auto">
+    {data?.skills?.map((skill, index) => (
+      <motion.div
+        key={skill.id || index}
+        className="rounded-2xl p-6 bg-white dark:bg-[#1e1e1e]
+        border border-[#25c1dd]/30 shadow-md hover:shadow-lg
+        transition-transform duration-300 hover:scale-105 flex flex-col items-center justify-center space-y-2"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay: index * 0.05, duration: 0.4 }}
+        viewport={{ once: true }}
+      >
+        <Star size={28} className="text-yellow-400" />
+        <h3 className="text-base font-semibold text-center text-gray-700 dark:text-gray-300">
+          {skill.skillName}
+        </h3>
+      </motion.div>
+    ))}
+  </div>
+</section>
 
-            <div className="relative z-10 flex flex-col items-center justify-center">
-              <Star size={36} className="mb-3 text-yellow-300" />
-              <h3 className="text-xl font-semibold tracking-wide
-               text-gray-600 dark:text-gray-300">
-                {skill.skillName}
-              </h3>
-            </div>
-          </motion.div>
-        ))}
-      </div>
-    </section>
   );
 };
 

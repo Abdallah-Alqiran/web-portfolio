@@ -1,5 +1,6 @@
 import { lazy, Suspense } from "react";
 import Nav from "../layouts/nav";
+import Footer from "../pages/footer";
 
 // Lazy loaded components
 const Home = lazy(() => import("../pages/home"));
@@ -26,6 +27,7 @@ export default function HomePage() {
         <Courses />
         <Experience />
         <Contact />
+        <Footer/>
       </Suspense>
     </>
   );

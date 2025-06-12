@@ -6,8 +6,10 @@ const Details = () => {
   const { isLoading, error, data } = useUserdata();
   const { projectId } = useParams();
 
-  if (isLoading) return <p className="text-center text-gray-400">Loading...</p>;
-  if (error) return <p className="text-center text-red-500">Error happened!</p>;
+    if (isLoading) return <p className=" bg-secondary text-center text-2xl font-semibold
+   text-[#25c1dd] animate-pulse">Loading...</p>;
+  if (error) return <p className="text-center text-2xl font-semibold  animate-pulse
+   text-red-500 bg-secondary">Error happened!</p>;
 
   const project = data?.projects?.find((p) => p.id === Number(projectId));
 
@@ -29,7 +31,7 @@ const Details = () => {
       {project.projectName}
     </h2>
 
-    <p className="text-sm md:text-base text-gray-700 dark:text-gray-200 leading-relaxed border-l-4 border-[#209191] pl-4">
+    <p className="text-sm md:text-lg  whitespace-pre-wrap text-gray-700 dark:text-gray-200 leading-relaxed border-l-4 border-[#209191] pl-4">
       {project.description}
     </p>
 

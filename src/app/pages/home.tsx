@@ -4,6 +4,7 @@ import img1 from "../images/download (2).png"
 import img4 from "../images/download.png";
 import img5 from "../images/download (3).jpeg"
 import img6 from "../images/download (3).png"
+import img7 from "../images/WhatsApp Image 2025-06-11 at 17.08.12_eb39a18b.jpg"
 import { Button } from "@/shared/components/ui/button";
 import { Download } from "lucide-react";
 import { useUserdata } from "@/shared/components/firestore";
@@ -16,14 +17,17 @@ const Home = () => {
     facebook: img2,
     github:img1,
     leetcode:img5,
-    codeforces:img6
+    codeforces:img6,
+    notion:img7
 
   };
 
   const { isLoading, error, data } = useUserdata();
 
-  if (isLoading) return <p className="text-center text-gray-400">Loading...</p>;
-  if (error) return <p className="text-center text-red-500">Error happened!</p>;
+  if (isLoading) return <p className=" bg-secondary text-center text-2xl font-semibold
+   text-[#25c1dd] animate-pulse">Loading...</p>;
+  if (error) return <p className="text-center text-2xl font-semibold  animate-pulse
+   text-red-500 bg-secondary">Error happened!</p>;
 
   return (
     <div className="bg-secondary w-full pt-[100px]">
@@ -48,7 +52,7 @@ const Home = () => {
           {data?.userName}
         </h1>
 
-        <h3 className="text-2xl text-[#25a9a9] mt-2 font-medium">
+        <h3 className="text-xl text-[#25a9a9] mt-2 font-medium">
           {data?.jobTitle}
         </h3>
 
@@ -81,14 +85,14 @@ const Home = () => {
             className="mt-6"
           >
             <Button
-              className="group bg-[#166c7b] text-gray-300 mt-3 px-8 py-3 text-lg 
-              rounded-2xl shadow-lg transition duration-300 flex items-center gap-2 
+              className="group bg-[#166c7b] text-gray-300 mt-3 px-8 py-3 text-xl 
+              rounded-2xl shadow-lg transition duration-300 flex items-center gap-3 
               border w-fit border-transparent hover:border-[#006a6a] 
               hover:bg-gray-300 font-semibold hover:text-[#006a6a]"
             >
               Download CV
               <Download
-                size={28}
+                size={33}
                 className="transition-transform duration-300 group-hover:animate-jump"
               />
             </Button>
