@@ -19,7 +19,7 @@ const Courses = () => {
   return (
     <section id="courses" className="pt-10 px-4  bg-secondary">
 
-      <h1 className="text-3xl font-semibold text-[#25c1dd] w-fit mx-auto mb-8 pb-1 tracking-wide drop-shadow-md">
+      <h1 className="text-3xl font-semibold text-[#25c1dd] w-fit mx-auto mb-10 pb-1 tracking-wide drop-shadow-md">
         Courses
       </h1>
 
@@ -32,7 +32,8 @@ const Courses = () => {
             >
               <motion.div
                 className="h-full rounded-2xl 
-                 dark:text-gray-300 shadow-lg p-6 hover:scale-[1.02] transition-transform duration-300
+                 dark:text-gray-300 shadow-lg p-6 hover:scale-[1.02] 
+                 transition-transform duration-300
                  border-2 border-[#209191] "
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}

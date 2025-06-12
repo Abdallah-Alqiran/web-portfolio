@@ -60,7 +60,7 @@ const Contact = () => {
   }
 
   return (
-    <section id="contact" className="pt-10 bg-secondary  ">
+    <section id="contact" className=" bg-secondary  ">
       <h1 className="text-3xl font-semibold text-[#25c1dd] w-fit mx-auto
        drop-shadow-md md:mb-10 ">
         Contact Me
