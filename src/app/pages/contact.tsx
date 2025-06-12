@@ -16,7 +16,7 @@ const Contact = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 4000); 
+    }, 6000); 
 
     return () => clearTimeout(timer);
   }, []);
@@ -60,12 +60,12 @@ const Contact = () => {
   }
 
   return (
-    <section id="contact" className="pt-22 bg-secondary pb-10">
-      <h1 className="text-3xl font-semibold text-[#25c1dd] w-fit mx-auto pt-20
-        tracking-wide drop-shadow-md pb-10">
+    <section id="contact" className="pt-20 bg-secondary  ">
+      <h1 className="text-3xl font-semibold text-[#25c1dd] w-fit mx-auto
+       drop-shadow-md md:mb-10 ">
         Contact Me
       </h1>
-      <div className="container mx-auto px-4 pt-10 ">
+      <div className="container mx-auto px-4  ">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}

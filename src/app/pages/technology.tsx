@@ -10,7 +10,7 @@ const Technology = () => {
    text-red-500 bg-secondary">Error happened!</p>;
 
   return (
-    <section className="pt-20 px-4  bg-secondary ">
+    <section className="pt-10 px-4  bg-secondary ">
       <h1
         className="text-3xl font-semibold 
       text-[#25c1dd] w-fit mx-auto mb-12 pb-1 tracking-wide drop-shadow-md"
@@ -18,7 +18,7 @@ const Technology = () => {
         Technologies & Tools
       </h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 max-w-7xl mx-auto pb-20">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 max-w-7xl mx-auto ">
         {data?.technologiesAndTools?.map((techs, index) => (
       <motion.div
   key={techs.id || index}

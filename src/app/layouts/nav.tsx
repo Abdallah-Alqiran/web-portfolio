@@ -41,7 +41,7 @@ const Nav = () => {
           </div>
 
           <div className="flex flex-1 items-center justify-center sm:justify-start">
-            <div className="text-[#25c1dd] text-sm md:text-base font-medium whitespace-nowrap">
+            <div className="text-[#25c1dd] text-md md:text-base font-medium whitespace-nowrap">
               Abdalla Alqiran
             </div>
           </div>

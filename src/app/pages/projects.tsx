@@ -30,7 +30,7 @@ const Projects = () => {
                 className="pl-4 md:basis-1/2 lg:basis-1/4"
               >
                 <motion.div
-                  className="rounded-2xl shadow-md overflow-hidden flex flex-col mb-20"
+                  className="rounded-2xl shadow-md overflow-hidden flex flex-col mb-10"
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}

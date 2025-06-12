@@ -40,7 +40,8 @@ const Experience = () => {
             </h4>
 
           
-            <p className="text-sm md:text-[20px] font-semibold leading-relaxed text-gray-800 dark:text-gray-400">
+            <p className="text-sm md:text-[20px] font-semibold leading-relaxed text-gray-800
+             dark:text-gray-400">
               {ex.description}
             </p>
           </div>

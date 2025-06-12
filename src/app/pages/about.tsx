@@ -28,10 +28,11 @@ const About = () => {
     w-full max-w-8xl mx-auto 
   "
 >
-  <p  className="bg-white dark:bg-[#1e1e1e]
+  <p  className="bg-white dark:bg-[#1e1e1e] text-sm md:text-[20px] font-semibold leading-relaxed text-gray-800
+             
    shadow-md rounded-xl p-8 space-y-4 border-l-4
              border-[#209191] text-left whitespace-pre-wrap
-              text-gray-600 dark:text-gray-300 text-sm font-semibold md:text-lg">
+             dark:text-gray-300 ">
     {data?.about}
   </p>
 </motion.div>
