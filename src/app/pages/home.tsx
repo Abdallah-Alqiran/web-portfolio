@@ -4,7 +4,7 @@ import img1 from "../images/download (2).png"
 import img4 from "../images/download.png";
 import img5 from "../images/download (3).jpeg"
 import img6 from "../images/download (3).png"
-import img7 from "../images/WhatsApp Image 2025-06-11 at 17.08.12_eb39a18b.jpg"
+import img7 from "../images/notion.png"
 import { Button } from "@/shared/components/ui/button";
 import { Download } from "lucide-react";
 import { useUserdata } from "@/shared/components/firestore";

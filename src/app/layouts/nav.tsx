@@ -15,7 +15,7 @@ const Nav = () => {
     }
   };
 
-  const sections = ["home", "about", "skills", "courses", "projects", "contact"];
+  const sections = ["home", "about", "skills", "projects" , "courses", "contact"];
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-white dark:bg-[#2e2d2d] shadow-sm overflow-x-hidden">
