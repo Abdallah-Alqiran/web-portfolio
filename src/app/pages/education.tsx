@@ -9,7 +9,7 @@ const Education = () => {
    text-red-500 bg-secondary">Error happened!</p>;
 
   return (
-    <section className="pt-17  px-6 bg-secondary pb-20 ">
+    <section className="  px-6 bg-secondary pb-20 ">
       <div className="flex items-center justify-center mb-10">
         <h1 className="text-3xl font-semibold text-[#25c1dd] tracking-wide drop-shadow-sm">
           Education

@@ -17,7 +17,7 @@ const Projects = () => {
 
   return (
     <div id="projects" className=" bg-secondary">
-      <h1 className="text-3xl font-semibold text-[#25c1dd] w-fit mx-auto pt-20 pb-1 tracking-wide drop-shadow-md">
+      <h1 className="text-3xl font-semibold text-[#25c1dd] w-fit mx-auto pt-10 pb-1 tracking-wide drop-shadow-md">
         Projects
       </h1>
 

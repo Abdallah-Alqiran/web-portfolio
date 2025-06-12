@@ -17,9 +17,9 @@ const Courses = () => {
    text-red-500 bg-secondary">Error happened!</p>;
 
   return (
-    <section id="courses" className="pt-20 px-4 pb-20 bg-secondary">
+    <section id="courses" className="py-20 px-4 pb-20 bg-secondary">
 
-      <h1 className="text-3xl font-semibold text-[#25c1dd] w-fit mx-auto mb-12 pb-1 tracking-wide drop-shadow-md">
+      <h1 className="text-3xl font-semibold text-[#25c1dd] w-fit mx-auto mb-8 pb-1 tracking-wide drop-shadow-md">
         Courses
       </h1>
 
