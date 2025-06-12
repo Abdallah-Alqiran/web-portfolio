@@ -10,7 +10,7 @@ const Experience = () => {
    text-red-500 bg-secondary">Error happened!</p>;
 
   return (
-    <section id="experience" className="text-center px-4 bg-secondary py-10">
+    <section id="experience" className="text-center px-4 bg-secondary py-20">
       <h1 className="text-3xl text-[#25c1dd] font-semibold w-fit mx-auto pb-1 tracking-wide drop-shadow-md mt-10">
         Experience
       </h1>

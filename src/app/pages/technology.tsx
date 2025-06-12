@@ -10,7 +10,7 @@ const Technology = () => {
    text-red-500 bg-secondary">Error happened!</p>;
 
   return (
-    <section className=" px-4  bg-secondary py-20">
+    <section className=" px-4  pt-20 bg-secondary ">
       <h1
         className="text-3xl font-semibold 
       text-[#25c1dd] w-fit mx-auto mb-12 pb-1 tracking-wide drop-shadow-md"

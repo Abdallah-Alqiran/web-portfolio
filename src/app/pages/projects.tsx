@@ -16,7 +16,7 @@ const Projects = () => {
    text-red-500 bg-secondary">Error happened!</p>;
 
   return (
-    <div id="projects" className=" bg-secondary">
+    <div id="projects" className=" bg-secondary py-20 ">
       <h1 className="text-3xl font-semibold text-[#25c1dd] w-fit mx-auto pt-10 pb-1 tracking-wide drop-shadow-md">
         Projects
       </h1>
@@ -30,7 +30,7 @@ const Projects = () => {
                 className="pl-4 md:basis-1/2 lg:basis-1/4"
               >
                 <motion.div
-                  className="rounded-2xl shadow-md overflow-hidden flex flex-col mb-10"
+                  className="rounded-2xl shadow-md overflow-hidden flex flex-col"
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
