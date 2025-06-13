@@ -3,11 +3,11 @@ import { useState } from "react";
 
 const Nav = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("home"); 
+  const [activeSection, setActiveSection] = useState("home");
 
   const handleSmoothScroll = (e, section) => {
     e.preventDefault();
-    setActiveSection(section); 
+    setActiveSection(section);
     const targetElement = document.getElementById(section);
     if (targetElement) {
       targetElement.scrollIntoView({ behavior: "smooth" });
@@ -15,11 +15,11 @@ const Nav = () => {
     }
   };
 
-  const sections = ["home", "about", "skills", "courses", "projects", "contact"];
+  const sections = ["home", "about", "skills", "projects" , "courses", "contact"];
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-white dark:bg-[#2e2d2d] shadow-sm">
-      <div className="w-full px-2 sm:px-6 lg:px-8">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-white dark:bg-[#2e2d2d] shadow-sm overflow-x-hidden">
+      <div className="w-full px-2 sm:px-4 md:px-6">
         <div className="relative flex h-16 items-center justify-between">
           {/* زر الموبايل */}
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -41,37 +41,39 @@ const Nav = () => {
           </div>
 
           <div className="flex flex-1 items-center justify-center sm:justify-start">
-            <div className="text-[#25c1dd] text-lg font-medium whitespace-nowrap">
-  Abdalla Alqiran
-</div>
+            <div className="text-[#25c1dd] text-md md:text-base font-medium whitespace-nowrap">
+              Abdalla Alqiran
+            </div>
           </div>
 
-        <div className="hidden sm:block w-full">
-  <div className="flex justify-center space-x-6">
-    {sections.map((section) => (
-      <a
-        key={section}
-        href={`#${section}`}
-        onClick={(e) => handleSmoothScroll(e, section)}
-        className={`capitalize px-3 py-2 text-md font-medium transition-all duration-300 border-b-2
-          ${activeSection === section
-            ? "border-[#006a6a] text-[#006a6a]"
-            : "border-transparent hover:border-[#006a6a] hover:text-[#006a6a]"}`}
-      >
-        {section}
-      </a>
-    ))}
-  </div>
-</div>
+          <div className="hidden sm:block w-full">
+            <div className="flex justify-center flex-wrap gap-x-3 md:gap-x-6">
+              {sections.map((section) => (
+                <a
+                  key={section}
+                  href={`#${section}`}
+                  onClick={(e) => handleSmoothScroll(e, section)}
+                  className={`capitalize px-2 md:px-3 py-2 text-sm md:text-base font-medium transition-all duration-300 border-b-2
+                    ${activeSection === section
+                      ? "border-[#006a6a] text-[#006a6a]"
+                      : "border-transparent hover:border-[#006a6a] hover:text-[#006a6a]"}`}
+                >
+                  {section}
+                </a>
+              ))}
+            </div>
+          </div>
 
-
-          <ThemeToggler />
+          {/* مبدّل الثيم */}
+          <div className="ml-2 md:ml-4">
+            <ThemeToggler />
+          </div>
         </div>
       </div>
 
       {/* قائمة الجوال */}
       {mobileMenuOpen && (
-        <div className="sm:hidden px-4 py-2">
+        <div className="sm:hidden px-4 py-2 w-full overflow-x-hidden">
           {sections.map((section) => (
             <a
               key={section}

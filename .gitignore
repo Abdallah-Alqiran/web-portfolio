@@ -12,6 +12,7 @@ dist
 src/shared/components/firebase.tsx
 src/shared/components/firestore.tsx
 src/shared/components/types.tsx
+src\app\pages\footer.tsx
 dist-ssr
 *.local
 
