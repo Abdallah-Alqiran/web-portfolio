@@ -17,7 +17,7 @@ const Home = () => {
     github:img1,
     leetcode:img5,
     codeforces:img6
-
+    
   };
 
   const { isLoading, error, data } = useUserdata();
