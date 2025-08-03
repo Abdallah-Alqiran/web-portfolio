@@ -60,6 +60,7 @@ const Projects = () => {
                       </h3>
 
                       <Link to={`/details/project/${project.id}`}>
+
                         <Button
                           className="bg-[#006a6a] text-gray-300 w-full px-6 py-2 rounded-xl shadow-lg 
                           transition duration-300 flex items-center gap-2 border text-bolder
