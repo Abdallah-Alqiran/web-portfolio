@@ -27,7 +27,7 @@ const Education = () => {
           </p>
         ) : (
           <div className="max-w-5xl mx-auto space-y-6">
-            {data.education.map(({ id, university, date, major }) => (
+            {(data?.education ?? []).map(({ id, university, date, major }) => (
               <div
                 key={id}
                 className="p-6 rounded-xl border
