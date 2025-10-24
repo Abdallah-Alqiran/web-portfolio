@@ -57,7 +57,7 @@ const FreeContents = () => {
                         href={content.contentUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`text-xl font-normal text-[#27b1b1] block px-4 py-2 rounded text-gray-200 hover:text-[#25c1dd] transition font-medium ${!isValidUrl(content.contentUrl) ? 'pointer-events-none opacity-50 cursor-not-allowed' : ''}`}
+                        className={`text-xl font-semibold text-[#27b1b1] block px-4 py-2 rounded text-gray-200 hover:text-[#25c1dd] transition font-medium ${!isValidUrl(content.contentUrl) ? 'pointer-events-none opacity-50 cursor-not-allowed' : ''}`}
                         onClick={e => {
                           if (!isValidUrl(content.contentUrl)) {
                             e.preventDefault();
