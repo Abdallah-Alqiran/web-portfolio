@@ -36,7 +36,7 @@ const Details = () => {
     </p>
 
     <div className="flex justify-center">
-      <a href={project.url} target="_blank" rel="noopener noreferrer">
+      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
         <Button
           className="group bg-[#006a6a] text-white px-6 mt-4 w-72 py-3 rounded-full shadow-lg 
           transition duration-300 flex items-center justify-center gap-2 border  
