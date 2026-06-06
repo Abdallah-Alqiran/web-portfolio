@@ -1,17 +1,24 @@
-#  📜*Personal Portfolio*
+# Personal Portfolio
 
 ## Sections
 
-- 🧑‍💼 About Me
-- 🎓 Education & Courses
-- 💼 Experience
-- 💡 Projects
-- 🧠 Skills
-- 🛠 Technologies and Tools
+- About Me
+- Projects
+- Experience
+- Skills
+- Technologies and Tools
+- Courses
+- Certificates
+- Free Contents
+- Video Presentation
+- Education
+- Recommendations
+- Contact Me
 
 ---
 
-## 🛠 Tech Stack:
+## Tech Stack
+
 - React
 - Vite
 - Tailwind CSS
@@ -19,10 +26,10 @@
 - Firebase
 - Shadcn UI
 - TanStack Query
+
 ---
 
-
-## 🔧 Features
+## Features
 
 - A fully responsive personal portfolio website built using React and Vite to showcase my skills, projects, and background as a front-end developer.
 
@@ -33,9 +40,11 @@
 ---
 
 ## 🌐 [View Portfolio from here](https://abdallah-alqiran.github.io/web-portfolio/)
+
 This Web Portfolio Created by: [Omniya Abdelnasser](https://github.com/Omnia-Abdelnasser)
 
 ## 📱 [View Mobile Admin Version Code](https://github.com/Abdallah-Alqiran/Portfolio-Admin)
+
 Internal version of the portfolio app for real-time Firebase editing and live updates to the user-facing app.
 
 created by [Abdallah Alqiran](https://github.com/Abdallah-Alqiran)

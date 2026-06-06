@@ -2,8 +2,8 @@ import { Button, ButtonProps } from "@/shared/components/ui/button";
 import { useEffect, useState } from "react";
 
 export function ScrollToTop({
-  minHeight, // Height from which button will be visible
-  scrollTo, // Height to go on scroll to top
+  minHeight,
+  scrollTo,
   ...props
 }: ButtonProps & { minHeight?: number; scrollTo?: number }) {
   const [visible, setVisible] = useState(false);

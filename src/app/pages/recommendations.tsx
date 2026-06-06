@@ -1,34 +1,39 @@
 import {
-    useAddPendingRecommendation,
-    useUserdata,
+  useAddPendingRecommendation,
+  useUserdata,
 } from "@/shared/components/firestore";
 import { Button } from "@/shared/components/ui/button";
 import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
 } from "@/shared/components/ui/carousel";
 import { Input } from "@/shared/components/ui/input";
 import { Textarea } from "@/shared/components/ui/textarea";
+import emailjs from "@emailjs/browser";
 import { AnimatePresence, motion } from "framer-motion";
 import {
-    Mail,
-    MessageSquare,
-    PlusCircle,
-    Quote,
-    Send,
-    User,
-    X,
+  Mail,
+  MessageSquare,
+  PlusCircle,
+  Quote,
+  Send,
+  User,
+  X,
 } from "lucide-react";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 
 const Recommendations = () => {
   const { data: userData, isLoading, error } = useUserdata();
   const addPending = useAddPendingRecommendation();
 
-  const recommendations = userData?.recommendations || [];
+  const recommendations = useMemo(() => {
+    return [...(userData?.recommendations || [])].sort(
+      (a, b) => (a.order ?? Infinity) - (b.order ?? Infinity),
+    );
+  }, [userData?.recommendations]);
 
   const [formData, setFormData] = useState({
     userName: "",
@@ -51,6 +56,20 @@ const Recommendations = () => {
     setIsSubmitting(true);
     try {
       await addPending.mutateAsync(formData);
+      const templateParams = {
+        name: formData.userName,
+        email: formData.email,
+        message: formData.message,
+        time: new Date().toLocaleString(),
+      };
+
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        templateParams,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+      );
+
       setSubmitStatus("success");
       setFormData({ userName: "", email: "", message: "" });
       setTimeout(() => {
@@ -225,7 +244,7 @@ const Recommendations = () => {
                         Your Name
                       </label>
                       <Input
-                        placeholder="e.g., John Doe"
+                        placeholder="enter your name..."
                         value={formData.userName}
                         onChange={(e) =>
                           setFormData({ ...formData, userName: e.target.value })
@@ -241,7 +260,7 @@ const Recommendations = () => {
                       </label>
                       <Input
                         type="email"
-                        placeholder="e.g., john@example.com"
+                        placeholder="enter your email..."
                         value={formData.email}
                         onChange={(e) =>
                           setFormData({ ...formData, email: e.target.value })
